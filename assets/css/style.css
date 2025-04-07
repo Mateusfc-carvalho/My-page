@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+header {
+  border-bottom: 1px solid #343434;
+}
+header .navbar {
+  background-color: #020202;
+}
+header .navbar .navbar-collapse .navbar-nav {
+  display: flex;
+  margin-right: 10px;
+  flex-wrap: wrap;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item {
+  list-style: none;
+  margin-left: 30px;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  text-decoration: none;
+  color: #ace894;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.2rem;
+  display: black;
+  padding: 10px 20px;
+  border-bottom: 1px solid #fff;
+  margin-top: 8px;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.8s, border-radius 0.3s, color 0.8s;
+}
+
+.logo-menu-image {
+  width: 100px;
+  height: auto;
+}
+
+@media screen and (max-width: 991px) {
+  header .navbar {
+    background-color: #020202;
+  }
+  header .navbar .navbar-collapse .navbar-nav {
+    margin-top: 30px;
+  }
+}
+.efect {
+  display: inline-flex;
+  gap: 0.05em;
+}
+
+.efect span {
+  color: #39ff14;
+  display: inline-block;
+  animation: bounce 1.4s infinite ease-in-out;
+  text-shadow: 7px 8px 11px greenyellow;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+main {
+  width: 100%;
+}
+main .banner {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main .banner img {
+  width: 100%;
+  height: 100vh;
+}
+main section {
+  width: 100%;
+  height: auto;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: #000;
+}
+main section:nth-child(even) {
+  background-image: url("../img/about.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+main .about {
+  width: 100%;
+  padding-top: 150px;
+}
+main .about .h3 {
+  background-color: rgba(70, 213, 52, 0.5803921569);
+  text-shadow: 2px 3px 1px rgb(0, 0, 0);
+}
+main .about .title-and-text {
+  display: flex;
+  padding: 20px 20px;
+  margin-top: 20px;
+}
+main .about .title-and-text .paragrafo {
+  background-color: rgba(0, 0, 0, 0.5098039216);
+  padding: 30px 20px;
+  border: 3px inset rgb(163, 255, 3);
+  border-radius: 12px;
+  text-shadow: 2px 2px 1px black;
+  font-size: clamp(1.21rem, 1.5vw, 2rem);
+  font-weight: 200;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 50px;
+  letter-spacing: 3px;
+  box-shadow: 2px 2px 12px rgb(107, 255, 15);
+}
+main .about .title-and-text .image-about {
+  width: 100%;
+  height: 310px;
+}
+main .about .card-container {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+main .about .card-container .card {
+  flex: 1 1 300px;
+  max-width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5098039216);
+  padding: 30px;
+  border: 3px inset rgb(163, 255, 3);
+  border-radius: 12px;
+  text-shadow: 2px 2px 1px black;
+  box-shadow: 2px 2px 12px rgb(107, 255, 15);
+  transition: transform 0.8s;
+}
+main .about .card-container .card:hover {
+  transform: translate(-10px, -10px);
+}
+main .about .card-container .card h4 {
+  color: rgb(15, 208, 15);
+  margin: 25px 0;
+  text-align: center;
+}
+main .about .card-container .card p {
+  color: #fff;
+  font-size: clamp(1rem, 1vw, 1.5rem);
+  font-weight: 200;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main .about .card-container .card img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1200px) {
+  .about .title-and-text {
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  .about .title-and-text .paragrafo {
+    font-size: clamp(1.4rem, 2vh, 1.9rem);
+  }
+  .about .title-and-text .image-about {
+    display: none;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.title-text {
+  font-family: "VT323", monospace;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: bolder;
+  font-style: italic;
+  color: #f4f4f4;
+}
+
+.text {
+  font-family: "Inter", sans-serif;
+  color: #f4f4f4;
+}
+
+/*# sourceMappingURL=style.css.map */

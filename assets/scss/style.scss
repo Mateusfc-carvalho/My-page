@@ -1,0 +1,29 @@
+@use './buttons.scss';
+@use './variables.scss';
+@use './header.scss';
+@use './main.scss';
+@use './footer.scss';
+@use './efects.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+// class default text
+.title-text {
+    font-family: variables.$font-primary;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: bolder;
+    font-style: italic;
+    color: variables.$color-default;
+}
+.text {
+  font-family: variables.$font-text;
+  color: variables.$color-default; 
+}

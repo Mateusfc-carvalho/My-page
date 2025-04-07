@@ -1,0 +1,22 @@
+// animação do tiítulo
+.efect {
+    display: inline-flex;
+    gap: 0.05em;
+  }
+  
+  .efect span {
+    color: #39ff14;
+    display: inline-block;
+    animation: bounce 1.4s infinite ease-in-out;
+    text-shadow: 7px 8px 11px greenyellow;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  

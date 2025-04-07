@@ -1,0 +1,67 @@
+@use "./variables.scss";
+
+header {
+  border-bottom: 1px solid #343434;
+  // nav
+  .navbar {
+    background-color: variables.$background;
+    // div collapse
+    .navbar-collapse {
+        // ul
+        .navbar-nav {
+            display: flex;
+            margin-right: 10px;
+            flex-wrap: wrap;
+
+        // li
+        .nav-item {
+            list-style: none;
+            margin-left: 30px;
+
+         // a
+          .nav-link {
+            text-decoration: none;
+            color: variables.$green-color;
+            font-family: variables.$font-text;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 1.2rem;
+            display: black;
+            padding: 10px 20px;
+            border-bottom: 1px solid #fff;
+            margin-top: 8px;
+
+            &:hover {
+              border-radius: 12px;
+              background-color: #ffffff;
+              color: #000000;
+
+              transition: background-color 0.8s, border-radius 0.3s, color 0.8s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.logo-menu-image {
+  width: 100px;
+  height: auto;
+}
+
+@media screen and (max-width: 991px) {
+    header {
+        // nav
+        .navbar {
+          background-color: variables.$background;
+          // div collapse
+          .navbar-collapse {
+              // ul
+              .navbar-nav {
+                margin-top: 30px;
+            }
+          }
+        }
+      }
+    }

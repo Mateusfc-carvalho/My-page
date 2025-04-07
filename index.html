@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container-fluid p-3">
+          <div class="d-flex align-items-center">
+            <img src="./assets/img/logo-menu1.webp" class="logo-menu-image" alt="Logo do menu"/>
+            <h2 class="title-text ms-3 efect">
+              <span>Inspiration</span>
+            </h2>
+          </div>
+
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#top">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#talktome">Talk to me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <header id="banner" class="banner"><img src="./assets/img/banner.svg" alt="Banner"></header>
+      <section id="about" class="about">
+        <h3 class="title-text text-center h3">Sobre o Site</h3>
+        <article class="title-and-text p-5"> 
+          <p class="text paragrafo"> Este site foi criado específicamente para mostrar uma mistura de 
+            <span class="text-success">Designer</span> & <span class="text-warning">Responsividade</span>
+            Atrativa. Voltado para o <span class="text-primary">Front-end.</span><br>
+          </p>
+          <img src="./assets/img/icons/about-icon.svg" alt="image about" class="image-about">
+        </article>
+
+        <h3 class="title-text text-center h3">Linguagens Usadas</h3>
+        <article class="title-and-text p-5 card-container"> 
+          <div class="card" id="card1">
+            <img src="./assets/img/icons/html-icon.svg" alt="">
+            <h4>HTML5</h4>
+            <p>
+              O HTML(HyperText Markup Language)  é como o esqueleto de uma página.
+               Ele organiza os blocos de conteúdo — como títulos,
+               parágrafos, imagens e links — e diz ao navegador o que mostrar.
+            </p>    
+          </div>
+          <div class="card" id="card2">
+            <img src="./assets/img/icons/css-icon.svg" alt="">
+            <h4>CSS3</h4>
+            <p>
+              O CSS (Cascading Style Sheets) é o estilista do site. Com ele, definimos
+              cores, fontes, tamanhos, espaçamentos e posições, criando um layout 
+              bonito e responsivo.Ele transforma a estrutura crua do HTML em algo 
+              visualmente agradável.
+            </p>
+          </div>
+          <div class="card" id="card3">
+            <img src="./assets/img/icons/javascript.icon.svg" alt="">
+            <h4>Javascript</h4>
+            <p>
+              O JavaScript é o cérebro por trás da ação. Ele permite que
+              o site responda a cliques, mude conteúdo dinamicamente, valide formulários,
+               crie animações,e muito mais. É o que torna a experiência realmente interativa.
+            </p>
+          </div> 
+        </article>
+      </section>
+      <section></section>
+      <section id="contact"></section>
+      <section></section>
+      <section id="talktome"></section>
+
+    </main>
+
+    <footer></footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
