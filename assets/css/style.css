@@ -24,14 +24,15 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   font-size: 1.2rem;
   display: black;
   padding: 10px 20px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 4px solid #ace894;
   margin-top: 8px;
 }
 header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-  border-radius: 12px;
-  background-color: #ffffff;
+  border-radius: 10px;
+  background-color: #ace894;
   color: #000000;
-  transition: background-color 0.8s, border-radius 0.3s, color 0.8s;
+  font-weight: 500;
+  transition: background-color 0.5s, border-radius 0.3s, color 0.8s;
 }
 
 .logo-menu-image {
@@ -70,6 +71,11 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
 main {
   width: 100%;
 }
+main .h3 {
+  background-color: rgba(72, 213, 7, 0.77);
+  text-shadow: 2px 3px 1px rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
 main .banner {
   width: 100%;
   background-position: center;
@@ -91,93 +97,190 @@ main section:nth-child(even) {
   background-image: url("../img/about.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 400px;
 }
 main .about {
   width: 100%;
   padding-top: 150px;
-}
-main .about .h3 {
-  background-color: rgba(70, 213, 52, 0.5803921569);
-  text-shadow: 2px 3px 1px rgb(0, 0, 0);
+  margin-bottom: 100px;
 }
 main .about .title-and-text {
   display: flex;
-  padding: 20px 20px;
+  padding: 80px;
   margin-top: 20px;
 }
 main .about .title-and-text .paragrafo {
-  background-color: rgba(0, 0, 0, 0.5098039216);
+  background-color: rgba(0, 0, 0, 0.6274509804);
   padding: 30px 20px;
   border: 3px inset rgb(163, 255, 3);
   border-radius: 12px;
   text-shadow: 2px 2px 1px black;
-  font-size: clamp(1.21rem, 1.5vw, 2rem);
-  font-weight: 200;
+  font-size: clamp(1rem, 1.6vw, 2rem);
+  font-weight: 400;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 50px;
   letter-spacing: 3px;
   box-shadow: 2px 2px 12px rgb(107, 255, 15);
 }
+@media screen and (max-width: 1200px) {
+  main .about .title-and-text .paragrafo {
+    font-size: clamp(1.1rem, 2vh, 1.9rem);
+  }
+}
 main .about .title-and-text .image-about {
   width: 100%;
   height: 310px;
 }
+@media screen and (max-width: 1200px) {
+  main .about .title-and-text .image-about {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main .about .title-and-text {
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .about .title-and-text .paragrafo {
+    width: 100%;
+    height: auto;
+    border: 2px inset rgb(163, 255, 3);
+    font-size: 1.9vh;
+    font-weight: 200;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    padding: 20px 20px;
+  }
+}
+@media screen and (max-width: 383px) {
+  main .about .title-and-text {
+    justify-content: center;
+    margin: auto 20px auto 20px;
+    padding: 20px 40px;
+  }
+  main .about .title-and-text .paragrafo {
+    width: 100%;
+    border: 2px inset rgb(163, 255, 3);
+    font-size: 1.9vh;
+    font-weight: 200;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    padding: 30px 30px;
+  }
+}
 main .about .card-container {
   width: 100%;
-  min-height: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  height: auto;
+  margin: 60px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  gap: 30px 15px;
   padding: 20px;
 }
 main .about .card-container .card {
-  flex: 1 1 300px;
   max-width: 400px;
   height: auto;
+  max-height: 500px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.5098039216);
-  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.4862745098);
+  padding: 20px 20px;
   border: 3px inset rgb(163, 255, 3);
   border-radius: 12px;
   text-shadow: 2px 2px 1px black;
   box-shadow: 2px 2px 12px rgb(107, 255, 15);
-  transition: transform 0.8s;
 }
 main .about .card-container .card:hover {
-  transform: translate(-10px, -10px);
+  box-shadow: -5px -5px 14px rgb(104, 255, 4);
+  transform: translate(8px, -8px);
+  transition: transform 0.8s, box-shadow 0.3s;
 }
-main .about .card-container .card h4 {
+main .about .card-container .card h5 {
   color: rgb(15, 208, 15);
   margin: 25px 0;
   text-align: center;
 }
 main .about .card-container .card p {
   color: #fff;
-  font-size: clamp(1rem, 1vw, 1.5rem);
-  font-weight: 200;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: clamp(1rem, 0.8vw, 1.3rem);
+  font-weight: 400;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 450px) {
+  main .about .card-container .card p {
+    font-size: 15px;
+  }
 }
 main .about .card-container .card img {
   width: 100%;
-  height: 100px;
-  object-fit: contain;
+  height: 80px;
+}
+@media screen and (max-width: 450px) {
+  main .about .card-container .card img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1269px) {
+  main .about .card-container {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    gap: 30px 20px;
+    padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .about .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+main #contact {
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+main #contact h1 {
+  margin-bottom: 100px;
+}
+main #contact .container-contact {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 0 auto;
+  margin-bottom: 100px;
+  gap: 40px 100px;
+}
+main #contact .container-contact .img-contact {
+  width: 100%;
+  height: auto;
+}
+main #contact .container-contact .img-contact:hover {
+  box-shadow: 8px 8px 12px rgb(30, 220, 9);
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+@media screen and (max-width: 560px) {
+  main #contact .container-contact .img-contact {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main #contact .container-contact {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-@media screen and (max-width: 1200px) {
-  .about .title-and-text {
-    margin-top: 30px;
-    flex-wrap: wrap;
-  }
-  .about .title-and-text .paragrafo {
-    font-size: clamp(1.4rem, 2vh, 1.9rem);
-  }
-  .about .title-and-text .image-about {
-    display: none;
-  }
+.btn-style {
+  color: black;
+  background-color: #ace894;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -186,6 +289,11 @@ main .about .card-container .card img {
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  overflow-x: hidden;
 }
 
 .title-text {

@@ -1,0 +1,5 @@
+@use './variables.scss';
+.btn-style {
+    color: black;
+    background-color: variables.$green-color;
+}

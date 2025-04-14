@@ -28,15 +28,15 @@ header {
             font-size: 1.2rem;
             display: black;
             padding: 10px 20px;
-            border-bottom: 1px solid #fff;
+            border-bottom: 4px solid variables.$green-color;
             margin-top: 8px;
 
             &:hover {
-              border-radius: 12px;
-              background-color: #ffffff;
+              border-radius: 10px;
+              background-color: variables.$green-color;
               color: #000000;
-
-              transition: background-color 0.8s, border-radius 0.3s, color 0.8s;
+              font-weight: 500;
+              transition: background-color 0.5s, border-radius 0.3s, color 0.8s;
             }
           }
         }
@@ -65,3 +65,4 @@ header {
         }
       }
     }
+

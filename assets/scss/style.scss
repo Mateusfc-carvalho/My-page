@@ -1,9 +1,9 @@
-@use './buttons.scss';
 @use './variables.scss';
 @use './header.scss';
 @use './main.scss';
 @use './footer.scss';
 @use './efects.scss';
+@use './button.scss';
 
 * {
     margin: 0;
@@ -15,6 +15,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #000;
+    overflow-x: hidden;
+}
 // class default text
 .title-text {
     font-family: variables.$font-primary;

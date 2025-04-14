@@ -1,133 +1,234 @@
+// IMPORTS
 @use "./variables.scss";
 @use "./efects.scss";
 
+// LAYOUT PRINCIPAL
 main {
   width: 100%;
-
-  // Section Banner
+  // Subtítulo das seções
+  .h3 {
+    background-color: rgba(72, 213, 7, 0.77);
+    text-shadow: 2px 3px 1px rgb(0, 0, 0);
+    margin-bottom: 10px;
+  }
+  // BANNER SECTION
   .banner {
     width: 100%;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+
     img {
       width: 100%;
       height: 100vh;
     }
   }
-  // Parallax
+
+  // PARALLAX SECTIONS GERAIS
   section {
     width: 100%;
     height: auto;
     background-position: center center;
     background-attachment: fixed;
     background-color: #000;
+
     &:nth-child(even) {
       background-image: url("../img/about.svg");
       background-size: cover;
       background-repeat: no-repeat;
-      height: 400px;
     }
   }
-  // section About
+
+  // ABOUT SECTION
   .about {
     width: 100%;
     padding-top: 150px;
+    margin-bottom: 100px;
 
-    //Subtitle
-    .h3 {
-      background-color: #46d53494;
-      text-shadow: 2px 3px 1px rgb(0, 0, 0);
-    }
-
-    // article Abount
+    // Bloco de texto e imagem
     .title-and-text {
       display: flex;
-      padding: 20px 20px;
+      padding: 80px;
       margin-top: 20px;
 
       .paragrafo {
-        background-color: #00000082;
+        background-color: #000000a0;
         padding: 30px 20px;
         border: 3px inset rgb(163, 255, 3);
         border-radius: 12px;
         text-shadow: 2px 2px 1px black;
-        font-size: clamp(1.21rem, 1.5vw, 2rem);
-        font-weight: 200;
+        font-size: clamp(1rem, 1.6vw, 2rem);
+        font-weight: 400;
         font-family: Arial, Helvetica, sans-serif;
         line-height: 50px;
         letter-spacing: 3px;
         box-shadow: 2px 2px 12px rgb(107, 255, 15);
+
+        @media screen and (max-width: 1200px) {
+          font-size: clamp(1.1rem, 2vh, 1.9rem);
+        }
       }
 
       .image-about {
         width: 100%;
         height: 310px;
+
+        @media screen and (max-width: 1200px) {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 1200px) {
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+
+      @media screen and (max-width: 500px) {
+        .paragrafo {
+          width: 100%;
+          height: auto;
+          border: 2px inset rgb(163, 255, 3);
+          font-size: 1.9vh;
+          font-weight: 200;
+          font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          line-height: 20px;
+          letter-spacing: 0.1px;
+          padding: 20px 20px;
+        }
+      }
+
+      @media screen and (max-width: 383px) {
+        justify-content: center;
+        margin: auto 20px auto 20px;
+        padding: 20px 40px;
+
+        .paragrafo {
+          width: 100%;
+          border: 2px inset rgb(163, 255, 3);
+          font-size: 1.9vh;
+          font-weight: 200;
+          font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          line-height: 20px;
+          letter-spacing: 0.1px;
+          padding: 30px 30px;
+        }
       }
     }
+
+    // Cards da seção About
     .card-container {
       width: 100%;
-      min-height: 400px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
+      height: auto;
+      margin: 60px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      justify-items: center;
+      gap: 30px 15px;
       padding: 20px;
-    
+
       .card {
-        flex: 1 1 300px; 
         max-width: 400px;
         height: auto;
+        max-height: 500px;
         display: flex;
         flex-direction: column;
-        background-color: #00000082;
-        padding: 30px;
+        background-color: #0000007c;
+        padding: 20px 20px;
         border: 3px inset rgb(163, 255, 3);
         border-radius: 12px;
         text-shadow: 2px 2px 1px black;
         box-shadow: 2px 2px 12px rgb(107, 255, 15);
-        transition: transform 0.8s;
-    
+
         &:hover {
-          transform: translate(-10px, -10px);
+          box-shadow: -5px -5px 14px rgb(104, 255, 4);
+          transform: translate(8px, -8px);
+          transition: transform 0.8s, box-shadow 0.3s;
         }
-    
-        h4 {
+
+        h5 {
           color: rgb(15, 208, 15);
           margin: 25px 0;
           text-align: center;
         }
-    
+
         p {
           color: #fff;
-          font-size: clamp(1rem, 1vw, 1.5rem);
-          font-weight: 200;
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: clamp(1rem, 0.8vw, 1.3rem);
+          font-weight: 400;
+          font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+          @media screen and (max-width: 450px) {
+            font-size: 15px;
+          }
         }
-    
+
         img {
           width: 100%;
-          height: 100px;
-          object-fit: contain;
+          height: 80px;
+
+          @media screen and (max-width: 450px) {
+            width: 100%;
+          }
         }
       }
-    }
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .about {
-    .title-and-text {
-      margin-top: 30px;
-      flex-wrap: wrap;
-
-      .paragrafo {
-        font-size: clamp(1.4rem, 2vh, 1.9rem);
+      @media screen and (max-width: 1269px) {
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-items: center;
+        gap: 30px 20px;
+        padding: 20px 10px;
       }
-
-      .image-about {
-        display: none;
+      @media screen and (max-width: 450px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
+
+  // CONTACT SECTION
+  #contact {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+
+    h1 {
+      margin-bottom: 100px;
+    }
+
+    .container-contact {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 0 auto;
+      margin-bottom: 100px;
+      gap: 40px 100px;
+
+      .img-contact {
+        width: 100%;
+        height: auto;
+
+        &:hover {
+          box-shadow: 8px 8px 12px rgb(30, 220, 9);
+          border-radius: 50%;
+          transition: all 0.4s;
+        }
+
+        @media screen and (max-width: 560px) {
+          width: 70px;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+  // a Seção de Talk to me está escrita totalmente em bootstrap.
+  // ==============================================================
+  
+  // FOOTER SECTION
 }
