@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="icon" href="./assets/img/icons/favicon.ico">
+    <link rel="icon"       href="./assets/img/icons/favicon.ico">
   </head>
   <body>
     <header>
@@ -33,18 +33,19 @@
         </div>
       </nav>
     </header>
+
     <main>
-      <section id="banner" class="banner">
+      <section id="banner" class="banner lazy-load">
         <img src="./assets/img/banner.svg" alt="Banner" loading="lazy" />
       </section>
-      <section id="about" class="about">
+      <section id="about" class="about lazy-load">
         <h3 class="title-text text-center h3">Sobre o Site</h3>
         <article class="title-and-text">
           <p class="text paragrafo">Este site foi criado especificamente para mostrar uma mistura de <span class="text-success">Designer</span> & <span class="text-warning">Responsividade</span> Atrativa. Voltado para o <span class="text-primary">Front-end.</span></p>
           <img src="./assets/img/icons/about-icon.svg" alt="About Icon" class="image-about" loading="lazy" />
         </article>
         <h3 class="title-text text-center mb-2 h3">Ferramentas Usadas</h3>
-        <article class="title-and-text card-container">
+        <article class="title-and-text card-container lazy-load">
           <div class="card" id="card1">
             <img src="./assets/img/icons/html-icon.svg" alt="HTML5 Icon" loading="lazy" />
             <h5>HTML5</h5>
@@ -71,7 +72,7 @@
             <p>Bootstrap fornece componentes pré-construídos para criar interfaces responsivas rapidamente.</p>
           </div>
       </article>
-      <section id="contact">
+      <section id="contact" class="lazy-load">
         <h1 class="title-text text-center h3">Contato</h1>
         <div class="container-contact">
           <a href="https://api.whatsapp.com/send?phone=5589981031214&text=Ol%C3%A1,%20vim%20atrav%C3%A9s%20d%C3%A1%20p%C3%A1gina" target="_blank">
@@ -86,7 +87,7 @@
         </div>
       </section>
       
-      <section id="talktome" class="py-5 mb-3 text-white" style="scroll-margin-top: 80px;">
+      <section id="talktome" class="py-5 mb-3 text-white lazy-load" style="scroll-margin-top: 80px;">
         <div class="container">
           <form action="#" method="post" id="contact-form" class="p-4 bg-dark rounded shadow-lg">
             <h1 class="title-text text-center mb-4" style="color: #39ff14; font-weight: bolder; text-shadow: 0 0 10px #39ff14;">Fale Comigo</h1>
@@ -156,6 +157,6 @@
     </footer>
     
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/index.js"></script>
+    <script type="module" src="assets/js/index.js"></script>
   </body>
 </html>

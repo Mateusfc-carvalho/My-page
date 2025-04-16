@@ -41,6 +41,11 @@ header {
         }
       }
     }
+    @media screen and (max-width: 370px) {
+      .navbar-toggler{
+        width: 100%;
+      }
+    }
   }
 }
 

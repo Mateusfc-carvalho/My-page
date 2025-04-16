@@ -19,4 +19,15 @@
       transform: translateY(-10px);
     }
   }
+
+  .lazy-load {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 1.3s ease-in-out;
+  }
+  
+  .lazy-load.loaded {
+    opacity: 1;
+    transform: translateY(0);
+  }
   
