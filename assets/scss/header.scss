@@ -21,18 +21,17 @@ header {
          // a
           .nav-link {
             text-decoration: none;
-            color: variables.$green-color;
             font-family: variables.$font-text;
             font-weight: 400;
             font-style: italic;
-            font-size: 1.2rem;
-            display: black;
+            font-size: 1rem;
+            display: flex;
             padding: 10px 20px;
             border-bottom: 4px solid variables.$green-color;
             margin-top: 8px;
 
             &:hover {
-              border-radius: 10px;
+              border-radius: 5px;
               background-color: variables.$green-color;
               color: #000000;
               font-weight: 500;

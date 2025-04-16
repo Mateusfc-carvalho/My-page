@@ -9,7 +9,6 @@ main {
   .h3 {
     background-color: rgba(72, 213, 7, 0.77);
     text-shadow: 2px 3px 1px rgb(0, 0, 0);
-    margin-bottom: 10px;
   }
   // BANNER SECTION
   .banner {
@@ -17,10 +16,12 @@ main {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+   
 
     img {
       width: 100%;
-      height: 100vh;
+      height: 100dvh;
+      min-height: 100%;
     }
   }
 
@@ -86,7 +87,6 @@ main {
       @media screen and (max-width: 500px) {
         .paragrafo {
           width: 100%;
-          height: auto;
           border: 2px inset rgb(163, 255, 3);
           font-size: 1.9vh;
           font-weight: 200;
@@ -194,6 +194,7 @@ main {
     width: 100%;
     height: auto;
     margin-top: 100px;
+    padding-top: 150px;
 
     h1 {
       margin-bottom: 100px;
@@ -227,8 +228,4 @@ main {
       }
     }
   }
-  // a Seção de Talk to me está escrita totalmente em bootstrap.
-  // ==============================================================
-  
-  // FOOTER SECTION
 }

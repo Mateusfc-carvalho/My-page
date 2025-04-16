@@ -18,14 +18,15 @@ html {
 body {
     background-color: #000;
     overflow-x: hidden;
+
 }
 // class default text
 .title-text {
     font-family: variables.$font-primary;
     font-size: clamp(2rem, 5vw, 3rem);
-    font-weight: bolder;
+    font-weight: 200;
     font-style: italic;
-    color: variables.$color-default;
+    color: variables.$color-default;  
 }
 .text {
   font-family: variables.$font-text;

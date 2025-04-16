@@ -1,211 +1,160 @@
 <!DOCTYPE html>
-<html lang="Pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Page</title>
+    <title>Inspiration Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="./assets/img/icons/favicon.ico">
   </head>
   <body>
     <header>
       <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container-fluid p-3">
           <div class="d-flex align-items-center">
-            <img
-              src="./assets/img/logo-menu1.webp"
-              class="logo-menu-image"
-              alt="Logo do menu"
-            />
-            <h2 class="title-text ms-3 efect">
-              <span>Inspiration</span>
-            </h2>
+            <img src="./assets/img/logo-menu1.webp" class="logo-menu-image" alt="Logo do menu" loading="lazy" />
+            <h2 class="title-text ms-3 efect"><span>Inspiration</span></h2>
           </div>
-
-          <button
-            class="navbar-toggler bg-white"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#top">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#talktome">Talk to me</a>
-              </li>
+              <li class="nav-item"><a class="nav-link btn-style " href="#top">Home</a></li>
+              <li class="nav-item"><a class="nav-link btn-style " href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link btn-style " href="#contact">Contact</a></li>
+              <li class="nav-item"><a class="nav-link btn-style " href="#talktome">Talk to me</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-
-    <main class="">
-      <header id="banner" class="banner">
-        <img src="./assets/img/banner.svg" alt="Banner" />
-      </header>
+    <main>
+      <section id="banner" class="banner">
+        <img src="./assets/img/banner.svg" alt="Banner" loading="lazy" />
+      </section>
       <section id="about" class="about">
         <h3 class="title-text text-center h3">Sobre o Site</h3>
         <article class="title-and-text">
-          <p class="text paragrafo">
-            Este site foi criado específicamente para mostrar uma mistura de
-            <span class="text-success">Designer</span> &
-            <span class="text-warning">Responsividade</span> Atrativa. Voltado
-            para o <span class="text-primary">Front-end.</span><br />
-          </p>
-          <img
-            src="./assets/img/icons/about-icon.svg"
-            alt="image about"
-            class="image-about"
-          />
+          <p class="text paragrafo">Este site foi criado especificamente para mostrar uma mistura de <span class="text-success">Designer</span> & <span class="text-warning">Responsividade</span> Atrativa. Voltado para o <span class="text-primary">Front-end.</span></p>
+          <img src="./assets/img/icons/about-icon.svg" alt="About Icon" class="image-about" loading="lazy" />
         </article>
-
-        <h3 class="title-text text-center mb-2 h3">ferramentas Usadas</h3>
+        <h3 class="title-text text-center mb-2 h3">Ferramentas Usadas</h3>
         <article class="title-and-text card-container">
           <div class="card" id="card1">
-            <img src="./assets/img/icons/html-icon.svg" alt="" />
+            <img src="./assets/img/icons/html-icon.svg" alt="HTML5 Icon" loading="lazy" />
             <h5>HTML5</h5>
-            <p>
-              O HTML(HyperText Markup Language) é como o esqueleto de uma
-              página. Ele organiza os blocos de conteúdo — como títulos,
-              parágrafos, imagens e links — e diz ao navegador o que mostrar.
-            </p>
+            <p>O HTML organiza os blocos de conteúdo — como títulos, parágrafos, imagens e links — e diz ao navegador o que mostrar.</p>
           </div>
           <div class="card" id="card2">
-            <img src="./assets/img/icons/css-icon.svg" alt="" />
+            <img src="./assets/img/icons/css-icon.svg" alt="CSS3 Icon" loading="lazy" />
             <h5>CSS3</h5>
-            <p>
-              O CSS (Cascading Style Sheets) é o estilista do site. Com ele,
-              definimos cores, fontes, tamanhos, espaçamentos e posições,
-              criando um layout bonito e responsivo.Ele transforma a estrutura
-              crua do HTML em algo visualmente agradável.
-            </p>
+            <p>O CSS define cores, fontes, tamanhos e posições, criando um layout bonito e responsivo.</p>
           </div>
           <div class="card" id="card3">
-            <img src="./assets/img/icons/javascript-icon.svg" alt="" />
+            <img src="./assets/img/icons/javascript-icon.svg" alt="Javascript Icon" loading="lazy" />
             <h5>Javascript</h5>
-            <p>
-              O JavaScript é o cérebro por trás da ação. Ele permite que o site
-              responda a cliques, mude conteúdo dinamicamente, valide
-              formulários, crie animações,e muito mais. É o que torna a
-              experiência realmente interativa.
-            </p>
+            <p>O JavaScript permite interações, mudanças dinâmicas de conteúdo e animações.</p>
           </div>
           <div class="card" id="card4">
-            <img src="./assets/img/icons/sass-icon.svg" alt="" />
+            <img src="./assets/img/icons/sass-icon.svg" alt="Sass Icon" loading="lazy" />
             <h5>Sass</h5>
-            <p>
-              Sass (Syntactically Awesome Style Sheets) é uma extensão do CSS
-              que facilita a escrita e a organização de estilos em projetos
-              front-end. Ele permite o uso de recursos avançados, como variáveis
-              para manter cores e espaçamentos consistentes ao longo do código.
-            </p>
+            <p>Sass facilita a escrita e a organização de estilos com recursos avançados, como variáveis.</p>
           </div>
           <div class="card" id="card5">
-            <img src="./assets/img/icons/bootstrap-icon.svg" alt="" />
+            <img src="./assets/img/icons/bootstrap-icon.svg" alt="Bootstrap Icon" loading="lazy" />
             <h5>Bootstrap</h5>
-            <p>
-              Bootstrap é um framework front-end amplamente utilizado que
-              fornece um conjunto de ferramentas e componentes pré-construídos,
-              como botões, formulários, tabelas, grades e elementos de
-              navegação, facilitando a criação de interfaces responsivas de
-              forma rápida.
-            </p>
+            <p>Bootstrap fornece componentes pré-construídos para criar interfaces responsivas rapidamente.</p>
           </div>
-        </article>
-      </section>
-      <section></section>
+      </article>
       <section id="contact">
         <h1 class="title-text text-center h3">Contato</h1>
-        <section class="container-contact">
-          <a
-            href="https://api.whatsapp.com/send?phone=5589981031214&text=Ol%C3%A1,%20vim%20atrav%C3%A9s%20d%C3%A1%20p%C3%A1gina"
-            target="_blank"
-          >
-            <img
-              src="./assets/img/icons/whatsapp-icon.svg"
-              alt="Whatsapp"
-              class="img-contact"
-              title="Whatsapp"
-            />
+        <div class="container-contact">
+          <a href="https://api.whatsapp.com/send?phone=5589981031214&text=Ol%C3%A1,%20vim%20atrav%C3%A9s%20d%C3%A1%20p%C3%A1gina" target="_blank">
+            <img src="./assets/img/icons/whatsapp-icon.svg" alt="Whatsapp" class="img-contact" title="Whatsapp" loading="lazy" />
           </a>
           <a href="https://github.com/Mateusfc-carvalho" target="_blank">
-            <img
-              src="./assets/img/icons/github-icon.svg"
-              alt="Github"
-              class="img-contact"
-              title="Github"
-            />
+            <img src="./assets/img/icons/github-icon.svg" alt="Github" class="img-contact" title="Github" loading="lazy" />
           </a>
-          <a
-            href="https://www.linkedin.com/in/mateus-f-carvalho-b36b61286/"
-            target="_blank"
-          >
-            <img
-              src="./assets/img/icons/linkedIn-icon.svg"
-              alt="LinkedIn"
-              class="img-contact"
-              title="LinkedIn"
-            />
+          <a href="https://www.linkedin.com/in/mateus-f-carvalho-b36b61286/" target="_blank">
+            <img src="./assets/img/icons/linkedIn-icon.svg" alt="LinkedIn" class="img-contact" title="LinkedIn" loading="lazy" />
           </a>
-        </section>
+        </div>
       </section>
-      <section></section>
-      <section id="talktome" class="py-5 bg-secondary text-white">
+      
+      <section id="talktome" class="py-5 mb-3 text-white" style="scroll-margin-top: 80px;">
         <div class="container">
-          <form action="#" method="get" id="contact-form" class="p-4 bg-dark rounded shadow-lg">
-            <h1 class="title-text text-center mb-4" style="color: #39ff14;">Fale Comigo</h1>
+          <form action="#" method="post" id="contact-form" class="p-4 bg-dark rounded shadow-lg">
+            <h1 class="title-text text-center mb-4" style="color: #39ff14; font-weight: bolder; text-shadow: 0 0 10px #39ff14;">Fale Comigo</h1>
             <div class="container-form">
               <div class="mb-3">
-                <label for="name" class="form-label text-white">Nome:</label>
-                <input type="text" id="name" name="name" class="form-control" style="border-color: #39ff14;" placeholder="Digite seu nome" required />
+                <label for="name" class="form-label text-white" style="font-weight: 600;">Nome:</label>
+                <input type="text" id="name" name="name" class="form-control bg-secondary text-white" style="border: 2px solid #37ff14c5; box-shadow: 0 0 10px #30a768d4; border-radius: 8px;" placeholder="Digite seu nome" required />
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label text-white">Email:</label>
-                <input type="email" id="email" name="email" class="form-control" style="border-color: #39ff14;" placeholder="Digite seu email" required />
+                <label for="email" class="form-label text-white" style="font-weight: 600;">Email:</label>
+                <input type="email" id="email" name="email" class="form-control bg-secondary text-white" style="border: 2px solid #37ff14c5; box-shadow: 0 0 10px #30a768d4; border-radius: 8px;" placeholder="Digite seu email" required />
               </div>
               <div class="mb-3">
-                <label for="message" class="form-label text-white">Mensagem:</label>
-                <textarea id="message" name="message" rows="4" class="form-control" style="border-color: #39ff14;" placeholder="Digite sua mensagem"></textarea>
+                <label for="message" class="form-label text-white" style="font-weight: 600;">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" maxlength="100" class="form-control bg-secondary text-white" style="border: 2px solid #37ff14c5; box-shadow: 0 0 10px #30a768d4; border-radius: 8px;" placeholder="Digite sua mensagem"></textarea>
               </div>
               <div class="text-center mb-3">
-                <button type="submit" class="btn btn-lg btn-style">Enviar</button>
+                <button type="submit" id="btnSubmit" class="btn btn-style">Enviar</button>
               </div>
             </div>
           </form>
         </div>
       </section>
-      <section></section>
     </main>
 
-    <footer></footer>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <footer class="footer mt-5 bg-dark text-white pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5>Sobre Nós</h5>
+            <p>Transformamos experiências digitais com designs criativos e excelência em UI/UX.</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Links Rápidos</h5>
+            <ul class="list-unstyled">
+              <li><a href="#top" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="#about" class="text-white text-decoration-none">Sobre</a></li>
+              <li><a href="#contact" class="text-white text-decoration-none">Contato</a></li>
+              <li><a href="#talktome" class="text-white text-decoration-none">Fale Comigo</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Siga-nos</h5>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://github.com/Mateusfc-carvalho" target="_blank" class="text-white">
+                  <img src="./assets/img/icons/github-icon.svg" alt="Github" style="width:24px;" loading="lazy" />
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/mateus-f-carvalho-b36b61286/" target="_blank" class="text-white">
+                  <img src="./assets/img/icons/linkedIn-icon.svg" alt="LinkedIn" style="width:24px;" loading="lazy" />
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://api.whatsapp.com/send?phone=5589981031214" target="_blank" class="text-white">
+                  <img src="./assets/img/icons/whatsapp-icon.svg" alt="Whatsapp" style="width:24px;" loading="lazy" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center py-2 border-top border-secondary">
+          <small>&copy; 2023 Mateus-Carvalho. Todos os direitos reservados.</small>
+        </div>
+      </div>
+    </footer>
+    
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/index.js"></script>
   </body>
